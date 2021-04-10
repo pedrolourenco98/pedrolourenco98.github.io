@@ -678,8 +678,8 @@ b {
 }
 
 .texto-funcionalidades {
-  padding-top: 106px;
-  padding-bottom: 106px;
+  padding-top: 140px;
+  padding-bottom: 140px;
 }
 
 .texto-funcionalidades h1 {
@@ -700,7 +700,7 @@ b {
   padding: 72px 48px;
   border-radius: 16px;
   position: relative;
-  margin-top: -250px;
+  margin-top: -210px;
 }
 
 .icone-funcionalidade {
@@ -966,6 +966,13 @@ b {
 .perguntas {
   padding-top: 64px;
   padding-bottom: 64px;
+}
+.topo
+{
+  color: white;
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 4px;
 }
 
 /* News */

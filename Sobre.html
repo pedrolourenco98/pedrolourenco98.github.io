@@ -1,17 +1,15 @@
 <!DOCTYPE html>
-<html lang="pt-pt">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Trangest - Software de Gestão de Transportes</title>
-
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
 </head>
 
 <body>
@@ -19,10 +17,10 @@
   <button class="back-top" onclick="topFunction()" id="myBtn" title="Go to top">
     <i class="bi bi-chevron-up"></i>
   </button>
-  <header id="Blog">
+  <header>
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
       <div class="container">
-        <a href="index.html" class="navbar-brand" href="#"><img class="logotipo" src="./images/logotipo.png" alt="Transgest"/></a>
+        <a  href="index.html" class="navbar-brand" href="#"><img class="logotipo" src="./images/logotipo.png" alt="Transgest" /></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -31,7 +29,7 @@
           <div class="mx-auto"></div>
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link text-white" href="Sobre.html#Sobre">Sobre</a>
+              <a class="nav-link text-white" href="Sobre.html">Sobre</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-white" href="Funcionalidades.html#funcionalidades">Funcionalidades</a>
@@ -53,196 +51,216 @@
       </div>
     </nav>
   </header>
+
+  <!-- Homepage -->
   <main>
-    <section id="hero">
-      <div class="hero-container">
-        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
-          <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
-
-          <div class="carousel-inner" role="listbox">
-            <!-- Slide 1 -->
-            <div class="carousel-item active" style="
-                  background-image: url(https://images.unsplash.com/photo-1544725121-be3bf52e2dc8?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1347&q=80);
-                ">
-              <div class="carousel-container">
-                <div class="carousel-content container">
-                  <h2 class="animate__animated animate__fadeInDown">Está na hora de comprar um DAC.<br><span>Não sabe o
-                      que é?</span></h2>
-                  <p class="animate__animated animate__fadeInUp">
-                    Seja no sistema hi-fi de casa ou "on the move", o mercado oferece hoje em dia, por preços até
-                    bastante razoáveis, soluções que potencialmente poderão melhorar o som de que atualmente usufrui.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide 2 -->
-            <div class="carousel-item" style="
-                  background-image: url(https://images.unsplash.com/photo-1580519542036-c47de6196ba5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1951&q=80);
-                ">
-              <div class="carousel-container">
-                <div class="carousel-content container">
-                  <h2 class="animate__animated animate__fadeInDown">A pandemia vai acabar com o dinheiro</h2>
-                  <p class="animate__animated animate__fadeInUp">
-                    O título só pode ser considerado uma pequena provocação porque não coloquei um ponto de interrogação
-                    no fim. Como reflexão faz todo o sentido e pode vir a ser uma realidade.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <!-- Slide 3 -->
-            <div class="carousel-item" style="background-image: url(https://cdn.pixabay.com/photo/2015/12/15/06/42/kids-1093758_960_720.jpg)">
-              <div class="carousel-container">
-                <div class="carousel-content container">
-                  <h2 class="animate__animated animate__fadeInDown"> Liberdade para aprender</h2>
-                  <p class="animate__animated animate__fadeInUp">
-
-                    Quando era adolescente uma das experiências que mais marcou o que eu viria a ser foi ter
-                    experimentado brincar à programação com um velhinho Spectrum emprestado. Experimentei, falhei,
-                    corrigi, investiguei, aprendi.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-          </a>
-          <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-          </a>
-        </div>
-      </div>
-    </section>
-    <!-- End Hero -->
-    <div class="all-news">
+    <div class="banner-image-rodape">
       <div class="container">
-        <div class="row mt-5">
-          <div class="col-lg-2">
-            <h5 style="color: #606060">Últimas Noticias</h5>
+        <div class="row">
+          <div class="d-flex justify-content-end mt-5">
+            <img style="width: 180px; padding-top: 50px;"/>
           </div>
-          <div class="col-lg-10">
-            <hr style="width: 100%; margin-bottom: 42px; color: black" , size="3" />
+        </div>
+        <div class="row mt-3">
+          <div class="col-lg-8">
+            <h1 style="font-weight: 700; font-size: 36px; margin-bottom: 10px; color: white; padding-top: 50px;">Pensado para Transportadoras
+            </h1>
+            <p style="color: white; font-weight: 300; line-height: 1.5; margin-bottom: 45px; font-size: 15px;">
+              QuickBox é um software para empresas de Transportes e Logística com faturação integrada.
+            </p>
           </div>
-          <div class="col-lg-6">
-            <div class="card border-0 mb-3">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img
-                    src="https://images.unsplash.com/photo-1540829917886-91ab031b1764?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-                    alt="..." class="image-news" />
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body" style="margin-left: 18px">
-                    <h5 class="card-title">Intel já começou a baixar preços!</h5>
-                    <p class="card-text">
-                      Infelizmente, a Intel falhou em rivalizar com o que a AMD lançou no fim do ano passado, com o recente lançamento dos Intel Core 11000 (Rocket Lake-S). 
-                    </p>
-                    <p class="card-text"><small class="text-muted">Last updated 30 mins ago</small></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card border-0 mb-3">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img
-                    src="https://i0.wp.com/noticiasetecnologia.com/wp-content/uploads/2019/09/GTA-5.jpg?resize=695%2C391&ssl=1"
-                    alt="..." class="image-news" />
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body" style="margin-left: 18px">
-                    <h5 class="card-title">GTA V vai estar disponível gratuitamente</h5>
-                    <p class="card-text">
-                      Além do famoso jogo da Rockstar, serão adicionados nos próximos dias títulos como Zombie Army 4:
-                       Dead War e jogos desportivos.
-                    </p>
-                    <p class="card-text"><small class="text-muted">Last updated 8 mins ago</small></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card border-0 mb-3">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img
-                    src="https://cdn.pixabay.com/photo/2016/03/09/09/57/drone-1245980_960_720.jpg"
-                    alt="..." class="image-news" />
-                </div>
-                <div class="col-md-8">
-                  <div class="card-body" style="margin-left: 18px">
-                    <h5 class="card-title">Há novas regras para drones no espaço</h5>
-                    <p class="card-text">
-                      O objetivo é harmonizar a circulação de aviões e drones em segurança e evitar colisões, assim como mitigar os riscos do tráfego de drones no solo..
-                    </p>
-                    <p class="card-text"><small class="text-muted">Last updated 9 mins ago</small></p>
-                  </div>
-                </div>
-              </div>
-            </div>
+        </div>
+        <main>
+      </div>
+    </div>
+    <!-- Solução -->
+    <div class="solucao">
+      <div class="container">
+        <div class="col-lg-6">
+          <div class="texto-solucao">
+            <h1 class="noselect">Solução</h1>
+            <p class="textoligacao">Toda a informação sobre nós aqui</p>
           </div>
-          <div class="col-lg-6">
-            <div class="card border-0 mb-3">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img
-                    src="https://img.ibxk.com.br/2020/11/04/04113412317034.jpg?w=704"
-                    alt="..." class="image-news" />
+          <div class="paragrafo-solucao">
+            <p style="color: #797b84">
+              O <b>Transgest</b> é uma programa online desenvolvido especialmente para
+              <b>empresas de transporte de mercadorias e logística.</b>
+              <br />
+              <br />
+              É uma solução que permite às empresas do setor centralizar todo o seu trabalho diário numa
+              <b>única plataforma</b> e evitando que seja necessário usar vários programas ou ficheiros excel para o
+              trabalho
+              diário.
+              <br />
+              <br />
+              Este software permite-lhe ter um <b>website com área de cliente</b> integrada e track & trace onde os seus
+              clientes podem realizar e consultar envios, recolhas, reembolsos, faturação entre outros.
+              <br />
+              <br />
+              Permite-lhe ainda <b>configurar tabelas</b> de preço,e emitir a faturação automáticamente e ter uma
+              análise das
+              despesas e rentabilidade da frota.
+            </p>
+          </div>
+          <button type="button" class="btn blue text-white mt-5">Agendar Demonstração</button>
+        </div>
+
+        <!-- Colocar Imagem-->
+      </div>
+      <img class="img-fluid computador d-none d-sm-block" style="float: right; margin-top: -490px; width: 35%"
+        src="./images/imagemComputador.png" alt="computador" />
+    </div>
+    <div id="Adapte" class="espaco1" style="margin-bottom: 120px;">
+    </div>
+    <!-- Adapte-se a Nós-->
+    <div class="beneficios">
+      <div class="container">
+        <div class="col-lg-10">
+          <div class="texto-info-benificios">
+            <h1 class="noselect">Adapta-se ao Seu Negócio!</h1>
+            <h4>Benefícios</h4>
+          </div>
+          <div>
+            <ul class="lista-beneficios">
+              <li class="item-benefecios d-flex justify-content-between align-items-center mb-5">
+                <div class="circle-points">
+                  <div class="circle"><span>1</span></div>
                 </div>
-                <div class="col-md-8">
-                  <div class="card-body" style="margin-left: 18px">
-                    <h5 class="card-title">Os novos Samsung Galaxy A</h5>
-                    <p class="card-text">
-                      Os três novos modelos da Samsung (Galaxy A52, A52 5G e A72) já estão disponíveis em Portugal e trazem características como a duração da bateria.
-                    </p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                  </div>
+                <div class="texto-beneficios">
+                  <h6 class="titulo-beneficios">100% Online, Intuíva e Fácil de Usar</h6>
+                  <p style="color: #797b84">
+                    É totalmente online, não precisa ser instalada no seu computador ou no dos seus clientes. Além
+                    disso,
+                    apostamos na rapidez e facilidade de utilização. Por isso, as ferramentas e o design da nossa
+                    aplicação são
+                    muito intuitivas e fáceis de usar.
+                  </p>
                 </div>
-              </div>
-            </div>
-            <div class="card border-0 mb-3">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img
-                    src="https://echoboomer.pt/wp-content/uploads/2019/08/Netflix-novas-novidades.jpg"
-                    alt="..." class="image-news" />
+              </li>
+              <li class="d-flex justify-content-between align-items-center mb-5">
+                <div class="circle-points">
+                  <div class="circle"><span>2</span></div>
                 </div>
-                <div class="col-md-8">
-                  <div class="card-body" style="margin-left: 18px">
-                    <h5 class="card-title">Netflix perde terreno</h5>
-                    <p class="card-text">
-                      A Netflix perdeu terreno no mercado da transmissão em contínuo nos EUA no último ano, com uma queda de 31%.
-                    </p>
-                    <p class="card-text"><small class="text-muted">Last updated 45 mins ago</small></p>
-                  </div>
+                <div class="texto-beneficios">
+                  <h6 class="titulo-beneficios">Faturação e Contas Correntes Integradas</h6>
+                  <p style="color: #797b84">
+                    O Transgest integra já software de faturação, certificado pela AT, que lhe permite faturar tudo de
+                    forma
+                    automática. Integra ainda a possibilidade dos clientes consultarem a sua conta corrente.
+                  </p>
                 </div>
-              </div>
-            </div>
-            <div class="card border-0 mb-3">
-              <div class="row g-0">
-                <div class="col-md-4">
-                  <img
-                    src="http://bsmedia.business-standard.com/_media/bs/img/article/2016-06/29/full/1467209876-9317.jpg"
-                    alt="..." class="image-news" />
+              </li>
+              <li class="d-flex justify-content-between align-items-center mb-5">
+                <div class="circle-points">
+                  <div class="circle"><span>3</span></div>
                 </div>
-                <div class="col-md-8">
-                  <div class="card-body" style="margin-left: 18px">
-                    <h5 class="card-title">Bosch investe 8,5 milhões</h5>
-                    <p class="card-text">
-                      Em causa está um projeto, que também é financiado pelo o Programa Operacional Competitividade e Internacionalização (POCI).
-                    </p>
-                    <p class="card-text"><small class="text-muted">Last updated 40 mins ago</small></p>
-                  </div>
+                <div class="texto-beneficios">
+                  <h6 class="titulo-beneficios">Website com Área de Cliente</h6>
+                  <p style="color: #797b84">
+                    Integre o programa na totalidade com o seu website e inclua uma área de cliente e track & trace. Se
+                    ainda
+                    não tiver website, desenvolvemos à imagem da sua empresa.
+                  </p>
                 </div>
-              </div>
-            </div>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
   </main>
+  <div class=""style="margin-bottom:130px;">
 
+  </div>
+  <div id="Contactos" class="espaco1">
+  </div>
+  <footer>
+    <div class="banner-image-rodape">
+      <div class="container">
+        <div class="row">
+          <div class="d-flex justify-content-end mt-5">
+            <img style="width: 180px" src="./images/logotipo.png" />
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-lg-7">
+            <h1 style="font-weight: 600; font-size: 30px; margin-bottom: 24px; color: white">Agende uma Demonstração
+            </h1>
+            <p style="color: white; font-weight: 300; line-height: 1.5; margin-bottom: 45px; font-size: 15px">
+              Quer conhecer mais sobre este software e ter a oportunidade de o experimentar? Agende uma demonstração sem
+              compromisso e poderemos deslocar-nos até si.
+            </p>
+            <button style="background-color: white; border: none; color: #3080fd; font-weight: 400" type="button"
+              class="btn btn-primary">
+              Agende uma Demonstração
+            </button>
+          </div>
+        </div>
+        <div class="row mb-5 mt-3">
+          <div class="d-flex justify-content-end">
+            <div style="margin-right: 24px">
+              <h6 style="font-weight: 300; font-size: 15px" class="mb-1 text-white">Contactos</h6>
+              <p class="text-white">234 555 279</p>
+            </div>
+            <div>
+              <h6 style="font-weight: 300; font-size: 15px" class="mb-1 text-white">Envie-nos e-mail para</h6>
+              <p class="text-white">pedrolourenco@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
   <script type="text/javascript">
+    var nav = document.querySelector("nav");
+    window.addEventListener("scroll", function () {
+      if (window.pageYOffset > 100) {
+        nav.classList.add("color-navbar", "shadow");
+      } else {
+        nav.classList.remove("color-navbar", "shadow");
+      }
+    });
+
+    var myCollapsible = document.getElementById("multiCollapseExample2");
+    myCollapsible.addEventListener("show.bs.collapse", function () {
+      var rotated = false;
+
+      document.getElementById("buttonMore").onclick = function () {
+        var icone = document.getElementById("iconeButton"),
+          deg = 180;
+
+        icone.style.webkitTransform = "rotate(" + deg + "deg)";
+        icone.style.mozTransform = "rotate(" + deg + "deg)";
+        icone.style.msTransform = "rotate(" + deg + "deg)";
+        icone.style.oTransform = "rotate(" + deg + "deg)";
+        icone.style.transform = "rotate(" + deg + "deg)";
+        rotated = !rotated;
+      };
+    });
+
+    var myCollapsible2 = document.getElementById("multiCollapseExample2");
+    myCollapsible.addEventListener("hide.bs.collapse", function () {
+      var rotated = false;
+
+      document.getElementById("buttonMore").onclick = function () {
+        var icone = document.getElementById("iconeButton"),
+          deg = 0;
+
+        icone.style.webkitTransform = "rotate(" + deg + "deg)";
+        icone.style.mozTransform = "rotate(" + deg + "deg)";
+        icone.style.msTransform = "rotate(" + deg + "deg)";
+        icone.style.oTransform = "rotate(" + deg + "deg)";
+        icone.style.transform = "rotate(" + deg + "deg)";
+        rotated = !rotated;
+      };
+    });
+
+    var mybutton = document.getElementById("myBtn");
+
+    window.onscroll = function () {
+      scrollFunction();
+    };
+
     function scrollFunction() {
       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         mybutton.style.display = "block";
@@ -486,10 +504,10 @@
       },
     ]);
   </script>
+  <script type="text/javascript"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
     crossorigin="anonymous"></script>
-  <script type="text/javascript" src="./js/scripts.js"></script>
 </body>
 
 </html>
